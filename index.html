@@ -16,7 +16,7 @@
       vr-mode-ui="enabled:true"
       auto-enter-vr="display:GearVR;enabled:true"
     >
-    <a-entity environment></a-entity>
+    <a-entity environment="present: checkerboard"></a-entity>
       <a-box
         position="-2.5 0.5 -2"
         rotation="0 0 0"
@@ -1925,25 +1925,6 @@
         material="color:#ffffff"
         geometry="primitive:box"
       ></a-box>
-      <a-sky
-        color="#ECECEC"
-        position="0 0 0"
-        rotation="0 0 0"
-        scale="-1 1 1"
-        visible="true"
-        material="color:#ECECEC;shader:flat"
-        geometry="primitive:sphere;radius:5000;segmentsWidth:64;segmentsHeight:20"
-      ></a-sky>
-
-      <a-sky
-        color="#ECECEC"
-        position="0 0 0"
-        rotation="0 0 0"
-        scale="-1 1 1"
-        visible="true"
-        material="color:#ECECEC;shader:flat"
-        geometry="primitive:sphere;radius:5000;segmentsWidth:64;segmentsHeight:20"
-      ></a-sky>
       <canvas
         class="a-canvas a-grab-cursor"
         data-aframe-canvas="true"
