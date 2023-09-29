@@ -17,8 +17,12 @@
     >
       <a-assets>
         <img id="sky" src="Background desert.png">
+        <img id="groundTexture" src="ground texture.jpg">
       </a-assets>
       <a-sky src="#sky"></a-sky>
+      <a-light type="ambient" color="#445451"></a-light>
+      <a-light type="point" intensity="2" position="2 4 4"></a-light>
+      <a-plane src="#groundTexture" rotation="-90 0 0" width="30" height="30" repeat="10 10"></a-plane>
       <a-box
         position="-2.5 0.5 -2"
         rotation="0 0 0"
