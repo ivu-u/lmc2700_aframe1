@@ -4,6 +4,7 @@
     <title>Hello, World! - A-Frame</title>
     <meta name="description" content="Hello, World! - A-Frame" />
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
   </head>
   <body class="a-body aframe-inspector-opened">
     <a-scene
@@ -15,6 +16,7 @@
       vr-mode-ui="enabled:true"
       auto-enter-vr="display:GearVR;enabled:true"
     >
+    <a-entity environment="preset: forest; groundColor: #445; grid: cross"></a-entity>
       <a-box
         position="-2.5 0.5 -2"
         rotation="0 0 0"
